@@ -1,6 +1,21 @@
 import React, { useEffect } from "react";
 //import { useInput } from "./useInput";
 
+// useClick
+// const App = () => {
+//   // const potato = useRef();
+//   // setTimeout(() => potato.current.focus(), 3000);
+//   const callback = () => console.log("Hey");
+//   const title = useClick(callback);
+
+//   return (
+//     <div className="App">
+//       <h1 ref={title}>Hooks</h1>
+//       {/* <input ref={potato} placeholder="lala" /> */}
+//     </div>
+//   );
+// };
+
 // useTitle
 // const App = () => {
 //   const titleUpdator = useTitle("Loading...");
