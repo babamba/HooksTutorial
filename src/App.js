@@ -18,6 +18,22 @@ function App() {
   );
 }
 
+// useTabs
+// const App = () => {
+//   const { currentItem, changeItem } = useTabs(0, content);
+//   return (
+//     <div className="App">
+//       <h1>Hooks Tutorials</h1>
+//       <div>
+//         {content.map((section, index) => (
+//           <button onClick={() => changeItem(index)}>{section.tab}</button>
+//         ))}
+//         <div>{currentItem.content}</div>
+//       </div>
+//     </div>
+//   );
+// };
+
 // hooks 카운터  useState
 // const App = () => {
 //   const [item, setItem] = useState(1);
