@@ -1,22 +1,61 @@
-import React from "react";
-import { useInput } from "./useInput";
+import React, { useEffect } from "react";
+//import { useInput } from "./useInput";
 
-function App() {
-  // validator 기능을 실행하고 true false 값으로 검증 기능 구현
-  //const maxLen = value => value.length <= 10;
-  const maxLen = value => !value.includes("@");
-  const name = useInput("Mr.", maxLen);
+// useTitle
+// const App = () => {
+//   const titleUpdator = useTitle("Loading...");
+//   setTimeout(() => titleUpdator("Home"), 2000);
 
-  return (
-    <div className="App">
-      <h1>Hooks Tutorials</h1>
+//   return (
+//     <div className="App">
+//       <h1>Hooks</h1>
+//     </div>
+//   );
+// };
 
-      <div>
-        <input placeholder="Name" {...name} onChange={name.onChange} />
-      </div>
-    </div>
-  );
-}
+// useEffect
+// const App = () => {
+//   const sayHello = () => console.log("mounted");
+
+//   // componentDidMount / componentDidUpdate / componentWillUnmount 역할을 한다.
+//   // useEffect(() => {
+//   //   sayHello();
+//   // });
+
+//   const [number, setNumber] = useState(0);
+//   const [aNumber, setAnumber] = useState(0);
+//   // number가 변할때마다 콜백실행
+//   // 어떠한것도 실행하지않으려면 빈 dependency 를 주면 됨.
+//   useEffect(sayHello, [number]); //callback , dependencyArray
+
+//   return (
+//     <div className="App">
+//       <h1>Hooks</h1>
+//       <div>
+//         <button onClick={() => setNumber(number + 1)}>{number}</button>
+//         <button onClick={() => setAnumber(aNumber + 1)}>{aNumber}</button>
+//       </div>
+//     </div>
+//   );
+// };
+
+// use Input
+// function App() {
+//   // validator 기능을 실행하고 true false 값으로 검증 기능 구현
+//   //const maxLen = value => value.length <= 10;
+//   const maxLen = value => !value.includes("@");
+//   const name = useInput("Mr.", maxLen);
+
+//   return (
+//     <div className="App">
+//       <h1>Hooks Tutorials</h1>
+
+//       <div>
+//         <input placeholder="Name" {...name} onChange={name.onChange} />
+//       </div>
+//     </div>
+//   );
+// }
 
 // useTabs
 // const App = () => {
