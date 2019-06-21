@@ -1,4 +1,5 @@
 import React from "react";
+import { useInput } from "./useInput";
 
 function App() {
   // validator 기능을 실행하고 true false 값으로 검증 기능 구현
